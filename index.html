@@ -4,6 +4,10 @@
         <title>Flight Simulator</title>
         <link rel = "stylesheet" type = "text/css" href = "styles.css" />
         <script src = "scripts.js"></script>
+        <script>
+            windowLoad();
+            
+        </script>
     </head>
     <body>
         <div style="text-align: center;">
@@ -23,18 +27,24 @@
                 <img src = "LaunchCode_rocketline_white.png" height = "75" width = "75" id = "rocket"/>
             </div>
             <div style = "text-align: center; display: inline-block;">
-                    <button>Up</button>
-                    <button>Down</button>
-                    <button>Right</button>
-                    <button>Left</button>
+                    <button id = "up">Up</button>
+                    
+                    <script>buttonUp();</script>
+                    <button id = "down">Down</button>
+                    <script>buttonDown();</script>
+                    <button id = "right">Right</button>
+                    <button id = "left">Left</button>
                     <h3>Space Shuttle Height</h3>
                     <p id='spaceShuttleHeight'>0</p><p style = "display: inline-block;"> miles</p>
             </div>
         </div>
         <div style="text-align: center;">
             <button id = "takeoff">Take off</button>
+            <script>buttonTakeOff();</script>
             <button id = "landing">Land</button>
+            <script>buttonLanding();</script>
             <button id = "missionAbort">Abort Mission</button>
+            <script>buttonAbort();</script>
     </div>
     </body>
 </html>
